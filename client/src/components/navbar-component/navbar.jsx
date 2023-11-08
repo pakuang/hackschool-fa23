@@ -1,4 +1,5 @@
 import styles from './Navbar.module.css'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
@@ -7,12 +8,19 @@ const Navbar = () => {
         <div id={styles.navbar}>
             <div className={styles.title}>
                 {/* Link to the home page here! */}
+                <Link href="/">Home</Link>
             </div>
 
             {/* Link to other pages here! */}
-
+            <div>
+                <Link href="/game">Game Page</Link>
+                <Link href="/history">History</Link>
+            </div>
+            
         </div>
     )
 }
 
 // Export the NavBar, and import it in pages/_app.jsx to render it on all pages of your website!
+
+export default Navbar;
