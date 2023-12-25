@@ -12,9 +12,9 @@ const Navbar = () => {
             </div>
 
             {/* Link to other pages here! */}
-            <div>
-                <Link href="/game">Game Page</Link>
-                <Link href="/history">History</Link>
+            <div className={styles.nav_buttons}>
+                <Link href="/gamePage">Game Page</Link>
+                <Link href="/gameHistory">History</Link>
             </div>
             
         </div>
